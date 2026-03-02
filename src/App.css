@@ -1,0 +1,141 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  color : black;
+  background: transparent;
+}
+
+.app:hover{
+  background: transparent;
+}
+
+.app-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.app-header h1 {
+  font-size: 40px;
+  margin: 0 0 10px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.app-header p {
+  font-size: 16px;
+  margin: 0;
+  opacity: 0.95;
+}
+
+.mode-switch-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.3);
+  border: 2px solid white;
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mode-switch-btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 12px 24px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.tab.active {
+  background: rgb(255, 255, 255);
+  color: #667eea;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.app-content {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex: 1;
+  min-height: 500px;
+}
+
+.app-footer {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-top: auto;
+  font-size: 14px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 28px;
+  }
+
+  .app-header p {
+    font-size: 14px;
+  }
+
+  .nav-tabs {
+    gap: 8px;
+  }
+
+  .tab {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .app-content {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-header h1 {
+    font-size: 22px;
+  }
+
+  .app-header {
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+
+  .nav-tabs {
+    flex-direction: column;
+  }
+
+  .tab {
+    width: 100%;
+  }
+}
